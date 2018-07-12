@@ -1,0 +1,113 @@
+ext {
+
+    //Android
+    androidMinSdkVersion = 19
+    androidTargetSdkVersion = 28
+    androidCompileSdkVersion = 28
+
+    //Libraries
+    gradleVersion = '3.3.0-alpha03'
+    kotlinVersion = '1.2.50'
+    rxKotlinVersion = '2.2.0'
+    rxAndroidVersion = '2.0.2'
+    javaxInjectVersion = '1'
+    gsonVersion = '2.8.5'
+    okHttpVersion = '3.9.0'
+    retrofitVersion = '2.3.0'
+    roomVersion = '2.0.0-beta01'
+    timberVersion = '4.5.1'
+    glideVersion = '4.0.0'
+    daggerVersion = '2.16'
+
+    //Testing
+    robolectricVersion = '3.4.2'
+    jUnitVersion = '4.12'
+    assertJVersion = '3.8.0'
+    espressoVersion = '3.1.0-alpha3'
+    mockitoKotlinVersion = '1.5.0'
+    mockitoAndroidVersion = '2.8.47'
+    androidxTextVersion = '1.0.0-alpha3'
+
+    dependencies = [
+
+            androidxAnnotation              : 'androidx.annotation:annotation:1.0.0-beta01',
+            androidxAppcompat               : 'androidx.appcompat:appcompat:1.0.0-beta01',
+
+            androidxLifecycleExtensions     : "androidx.lifecycle:lifecycle-extensions:2.0.0-beta01",
+            androidxLifecycleReactiveStreams: "androidx.lifecycle:lifecycle-reactivestreams:2.0.0-beta01",
+            androidxLifecycleCommonJava8    : "androidx.lifecycle:lifecycle-common-java8:2.0.0-beta01",
+
+            androidxAsyncLayoutInflater     : 'androidx.asynclayoutinflater:asynclayoutinflater:1.0.0-beta01',
+
+            androidxCardView                : 'androidx.cardview:cardview:1.0.0-beta01',
+
+            androidxCollection              : 'androidx.collection:collection:1.0.0-beta01',
+            androidxCollectionKtx           : 'androidx.collection:collection-ktx:1.0.0-beta01',
+
+            androidxConstraintLayout        : 'androidx.constraintlayout:constraintlayout:2.0.0-alpha1',
+            androidxConstraintLayoutSolver  : 'androidx.constraintlayout:constraintlayout-solver:2.0.0-alpha1',
+
+            androidxCore                    : 'androidx.core:core:1.0.0-beta01',
+            androidxCoreKtx                 : 'androidx.core:core-ktx:1.0.0-beta01',
+
+            androidxRoomCommon              : "androidx.room:room-common:${roomVersion}",
+            androidxRoomMigration           : "androidx.room:room-migration:${roomVersion}",
+            androidxRoomRuntime             : "androidx.room:room-runtime:${roomVersion}",
+            androidxRoomCompiler            : "androidx.room:room-compiler:${roomVersion}",
+            androidxRoomRxJava              : "androidx.room:room-rxjava2:${roomVersion}",
+
+            androidxRecyclerView            : 'androidx.recyclerview:recyclerview:1.0.0-beta01',
+            androidxRecyclerViewSelection   : 'androidx.recyclerview:recyclerview-selection:1.0.0-beta01',
+
+            dagger                          : "com.google.dagger:dagger:${daggerVersion}",
+            daggerSupport                   : "com.google.dagger:dagger-android-support:${daggerVersion}",
+            daggerCompiler                  : "com.google.dagger:dagger-compiler:${daggerVersion}",
+            daggerProcessor                 : "com.google.dagger:dagger-android-processor:${daggerVersion}",
+
+            retrofit                        : "com.squareup.retrofit2:retrofit:${retrofitVersion}",
+            retrofitConverter               : "com.squareup.retrofit2:converter-gson:${retrofitVersion}",
+            retrofitAdapter                 : "com.squareup.retrofit2:adapter-rxjava2:${retrofitVersion}",
+
+            okHttp                          : "com.squareup.okhttp3:okhttp:${okHttpVersion}",
+            okHttpLogger                    : "com.squareup.okhttp3:logging-interceptor:${okHttpVersion}",
+
+            gson                            : "com.google.code.gson:gson:${gsonVersion}",
+
+            kotlin                          : "org.jetbrains.kotlin:kotlin-stdlib-jre8:${kotlinVersion}",
+
+            rxKotlin                        : "io.reactivex.rxjava2:rxkotlin:${rxKotlinVersion}",
+            rxAndroid                       : "io.reactivex.rxjava2:rxandroid:${rxAndroidVersion}",
+
+            javaxInject                     : "javax.inject:javax.inject:${javaxInjectVersion}",
+
+            glide                           : "com.github.bumptech.glide:glide:${glideVersion}",
+
+            timber                          : "com.jakewharton.timber:timber:${timberVersion}",
+    ]
+
+    testDependencies = [
+
+            junit                  : "junit:junit:${jUnitVersion}",
+
+            androidxArchCoreTesting: 'androidx.arch.core:core-testing:2.0.0-beta01',
+
+            kotlinJUnit            : "org.jetbrains.kotlin:kotlin-test-junit:${kotlinVersion}",
+
+            assertj                : "org.assertj:assertj-core:${assertJVersion}",
+
+            androidxSupportRunner  : "androidx.test:runner:${androidxTextVersion}",
+            androidxSupportRules   : "androidx.test:rules:${androidxTextVersion}",
+
+            mockito                : "com.nhaarman:mockito-kotlin:${mockitoKotlinVersion}",
+            mockitoAndroid         : "org.mockito:mockito-android:${mockitoAndroidVersion}",
+
+            androidxEspressoCore   : "androidx.test.espresso:espresso-core:${espressoVersion}",
+            androidxEspressoIntents: "androidx.test.espresso:espresso-intents:${espressoVersion}",
+            androidxEspressoContrib: "androidx.test.espresso:espresso-contrib:${espressoVersion}",
+
+            robolectric            : "org.robolectric:robolectric:${robolectricVersion}",
+
+            androidxRoomTesting    : "androidx.room:room-testing:${roomVersion}",
+    ]
+
+}
