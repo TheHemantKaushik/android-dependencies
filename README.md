@@ -2,11 +2,18 @@
 Easily manage your Android project dependencies!
 
 ## How to use:
-Add this line to your project's `build.gradle` file:
+
+### 1. Add `dependencies.gradle` file to your project's root directory.
+
+<br>
+
+### 2. Add this line to your project's `build.gradle` file:
 
 `apply from: 'dependencies.gradle'`
 
-In module's `build.gradle`:
+<br>
+
+### 3. In module's `build.gradle`:
 
     android {
         def config = rootProject.extensions.getByName("ext")
@@ -29,5 +36,6 @@ In module's `build.gradle`:
         testImplementation testDependencies.junit
     }
 
+<br>
 
 ## That's it!
